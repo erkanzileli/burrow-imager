@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 GITHUB_ORG="linkedin"
 GITHUB_REPO="Burrow"
@@ -25,7 +25,7 @@ LATEST_IMAGE_DATE=$(jq -r '.last_updated' <<<"${LATEST_IMAGE}")
 
 echo "LATEST_IMAGE_DATE:$LATEST_IMAGE_DATE \n"
 
-if [[ "$LATEST_RELEASE_DATE" < "$LATEST_IMAGE_DATE" ]]; then
+if [[ "$LATEST_RELEASE_DATE" > "$LATEST_IMAGE_DATE" ]]; then
 
     if [[ $LATEST_RELEASE_NAME == v* ]]; then
         VERSION="${LATEST_RELEASE_NAME:1}"
