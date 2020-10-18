@@ -1,5 +1,7 @@
 # burrow-imager
 
+![docker_pulls](https://img.shields.io/docker/pulls/erkanzileli/burrow)
+
 This repository's main purpose is create a container image for [linkedin/Burrow](https://github.com/linkedin/Burrow) and store on [Docker Hub](https://hub.docker.com/r/erkanzileli/burrow)
 
 ```
